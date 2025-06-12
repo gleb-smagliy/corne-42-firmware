@@ -75,7 +75,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <20 21>;
+            key-positions = <21 22>;
         };
 
         paste_vim {
@@ -91,6 +91,11 @@
         equal {
             bindings = <&kp EQUAL>;
             key-positions = <7 6>;
+        };
+
+        two {
+            bindings = <&kp NUMBER_2>;
+            key-positions = <1 2>;
         };
     };
 
@@ -115,10 +120,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE     &kp Q  &kp W  &kp E         &kp R       &kp T               &kp Y            &kp U        &kp I      &kp O    &kp P     &kp MINUS
-&mt LALT TAB  &kp A  &kp S  &kp D         &kp F       &kp G               &kp H            &kp J        &kp K      &kp L    &kp SEMI  &kp SQT
-&mt RCMD DEL  &kp Z  &kp X  &kp C         &kp V       &kp B               &kp N            &kp M        &kp COMMA  &kp DOT  &kp FSLH  &mt RMETA TILDE
-                            &mt LSHFT N0  &lt 1 BSPC  &mt ESCAPE LCTRL    &mt RCTRL SPACE  &lt 2 ENTER  &kp RSHFT
+&kp GRAVE         &kp Q  &kp W  &kp E             &kp R          &kp T          &kp Y        &kp U           &kp I            &kp O    &kp P     &kp F2
+&mt LALT TAB      &kp A  &kp S  &kp D             &kp F          &kp G          &kp H        &kp J           &kp K            &kp L    &kp SEMI  &kp SQT
+&mt RSHIFT TILDE  &kp Z  &kp X  &kp C             &kp V          &kp B          &kp N        &kp M           &kp COMMA        &kp DOT  &kp FSLH  &mt RMETA MINUS
+                                &mt LEFT_META N0  &mt LCTRL ESC  &lt 1 SPACE    &lt 2 ENTER  &mt RCTRL BSPC  &mt RSHFT COLON
             >;
         };
 
@@ -134,7 +139,7 @@
 &trans  &kp N1           &kp N2       &kp N3    &kp N4      &kp N5         &kp N6     &kp N7         &kp N8        &kp N9     &kp N0     &trans
 &trans  &kp EXCLAMATION  &kp AT_SIGN  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp EQUAL  &trans
 &trans  &trans           &trans       &trans    &trans      &trans         &trans     &trans         &trans        &trans     &trans     &trans
-                                      &trans    &trans      &trans         &trans     &trans         &trans
+                                      &trans    &trans      &trans         &kp SPACE  &trans         &trans
             >;
         };
 
