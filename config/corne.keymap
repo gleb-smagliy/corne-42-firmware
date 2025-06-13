@@ -30,37 +30,27 @@
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <3 4>;
+            key-positions = <5 17>;
         };
 
         bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <7 8>;
+            key-positions = <6 18>;
         };
 
         curly_left {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <15 16>;
+            key-positions = <17 29>;
         };
 
         curly_right {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <19 20>;
-        };
-
-        caret {
-            bindings = <&kp CARET>;
-            key-positions = <27 28>;
-        };
-
-        percent {
-            bindings = <&kp LS(PERCENT)>;
-            key-positions = <15 14>;
+            key-positions = <18 30>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <4 5>;
+            key-positions = <4 16>;
         };
 
         amps {
@@ -68,19 +58,9 @@
             key-positions = <8 9>;
         };
 
-        dollar {
-            bindings = <&kp DOLLAR>;
-            key-positions = <31 32>;
-        };
-
         colon {
             bindings = <&kp COLON>;
-            key-positions = <21 20>;
-        };
-
-        paste_vim {
-            bindings = <&paste_vim>;
-            key-positions = <10 9>;
+            key-positions = <21 22>;
         };
 
         backslash {
@@ -88,14 +68,9 @@
             key-positions = <34 33>;
         };
 
-        equal {
+        bspc {
             bindings = <&kp EQUAL>;
-            key-positions = <7 6>;
-        };
-
-        two {
-            bindings = <&kp NUMBER_2>;
-            key-positions = <1 2>;
+            key-positions = <7 19>;
         };
     };
 
