@@ -60,7 +60,7 @@
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <21 22>;
+            key-positions = <31 19>;
         };
 
         backslash {
@@ -69,7 +69,7 @@
         };
 
         bspc {
-            bindings = <&kp EQUAL>;
+            bindings = <&kp BSPC>;
             key-positions = <7 19>;
         };
     };
@@ -109,10 +109,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE         &kp Q  &kp W  &kp E             &kp R          &kp T                   &kp Y        &kp U           &kp I            &kp O    &kp P     &kp F2
-&mt LALT TAB      &kp A  &kp S  &kp D             &kp F          &kp G                   &kp H        &kp J           &kp K            &kp L    &kp SEMI  &kp SQT
-&mt RSHIFT TILDE  &kp Z  &kp X  &kp C             &kp V          &kp B                   &kp N        &kp M           &kp COMMA        &kp DOT  &kp FSLH  &mt RMETA PIPE
-                                &mt LEFT_META N0  &mt LCTRL ESC  &short_layer 1 SPACE    &lt 2 ENTER  &mt RCTRL BSPC  &mt RSHFT COLON
+&kp GRAVE         &kp Q  &kp W  &kp E                &kp R          &kp T                   &kp Y        &kp U           &kp I             &kp O    &kp P     &kp F2
+&mt LALT TAB      &kp A  &kp S  &kp D                &kp F          &kp G                   &kp H        &kp J           &kp K             &kp L    &kp SEMI  &kp SQT
+&mt RSHIFT TILDE  &kp Z  &kp X  &kp C                &kp V          &kp B                   &kp N        &kp M           &kp COMMA         &kp DOT  &kp FSLH  &mt RMETA PIPE
+                                &mt LEFT_META CARET  &mt LCTRL ESC  &short_layer 1 SPACE    &lt 2 ENTER  &mt RCTRL BSPC  &mt RSHFT DOLLAR
             >;
         };
 
