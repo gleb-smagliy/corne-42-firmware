@@ -136,10 +136,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE         &kp Q  &kp W  &kp E                &kp R                     &kp T                &kp Y                 &kp U                     &kp I             &kp O    &kp P     &paste_vim
-&mt LALT TAB      &kp A  &kp S  &kp D                &kp F                     &kp G                &kp H                 &kp J                     &kp K             &kp L    &kp SEMI  &kp SQT
-&mt RSHIFT TILDE  &kp Z  &kp X  &kp C                &upper_v                  &kp B                &kp N                 &kp M                     &kp COMMA         &kp DOT  &kp FSLH  &mt RMETA PIPE
-                                &mt LEFT_META CARET  &short_layer 2 LC(SPACE)  &hrm LCTRL ESCAPE    &short_layer 3 ENTER  &short_layer 1 LC(COLON)  &mt RSHFT DOLLAR
+&kp GRAVE         &kp Q  &kp W  &kp E                &kp R                 &kp T                &kp Y                 &kp U                 &kp I             &kp O    &kp P     &paste_vim
+&mt LALT TAB      &kp A  &kp S  &kp D                &kp F                 &kp G                &kp H                 &kp J                 &kp K             &kp L    &kp SEMI  &kp SQT
+&mt RSHIFT TILDE  &kp Z  &kp X  &kp C                &upper_v              &kp B                &kp N                 &kp M                 &kp COMMA         &kp DOT  &kp FSLH  &mt RMETA PIPE
+                                &mt LEFT_META CARET  &short_layer 2 SPACE  &hrm LCTRL ESCAPE    &short_layer 3 ENTER  &short_layer 1 COLON  &mt RSHFT DOLLAR
             >;
         };
 
