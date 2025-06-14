@@ -172,10 +172,10 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&kp LS(POUND)  &kp LS(PIPE)  &kp LS(LT)     &kp EQUAL     &kp LS(GT)     &kp LS(AMPS)     &trans  &trans  &trans  &trans  &trans  &trans
+&kp LBKT       &kp LS(LPAR)  &kp LS(COLON)  &kp LS(RPAR)  &kp RBKT       &kp LS(PRCNT)    &trans  &trans  &trans  &trans  &trans  &trans
+&kp LS(DLLR)   &kp LS(LBRC)  &kp LS(STAR)   &kp LS(RBRC)  &kp LS(CARET)  &kp LS(EXCL)     &trans  &trans  &trans  &trans  &trans  &trans
+                                            &kp LS(AT)    &trans         &trans           &trans  &trans  &trans
             >;
         };
 
