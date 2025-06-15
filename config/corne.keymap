@@ -14,7 +14,7 @@
         compatible = "zmk,combos";
 
         utils_layer {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <24 35>;
         };
 
@@ -139,7 +139,7 @@
 &mt LALT GRAVE    &kp Q         &kp W            &kp E                &kp R                 &kp T                &kp Y                 &kp U                &kp I             &kp O        &kp P            &paste_vim
 &hrm GLOBE TAB    &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D     &hrm LSHFT F          &kp G                &kp H                 &hrm RSHFT J         &hrm RMETA K      &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
 &mt RSHIFT TILDE  &kp Z         &kp X            &kp C                &upper_v              &kp B                &kp N                 &kp M                &kp COMMA         &kp DOT      &kp FSLH         &mt RSHFT PIPE
-                                                 &mt LEFT_META CARET  &short_layer 2 SPACE  &hrm LCTRL ESCAPE    &short_layer 3 ENTER  &short_layer 1 BSPC  &mt RMETA DOLLAR
+                                                 &mt LEFT_META CARET  &short_layer 1 SPACE  &hrm LCTRL ESCAPE    &short_layer 2 ENTER  &short_layer 2 BSPC  &mt RMETA DOLLAR
             >;
         };
 
@@ -152,10 +152,19 @@
 
             display-name = "Nums";
             bindings = <
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0    &kp W      &kp E   &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &kp H      &kp J   &kp K   &kp L   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp B      &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &kp SPACE  &trans  &trans
+&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0           &kp W   &kp E   &trans  &trans  &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans           &kp B   &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &kp BACKSPACE    &trans  &trans  &trans
+            >;
+        };
+
+        symbols {
+            bindings = <
+&kp GRAVE  &kp PIPE              &kp LESS_THAN  &kp EQUAL              &kp GREATER_THAN  &kp AMPS           &kp AT_SIGN  &kp HASH  &trans  &trans  &trans  &trans
+&kp LBKT   &kp LEFT_PARENTHESIS  &kp COLON      &kp RIGHT_PARENTHESIS  &kp RBKT          &kp PERCENT        &trans       &trans    &trans  &trans  &trans  &trans
+&kp TILDE  &kp LEFT_BRACE        &kp ASTERISK   &kp RIGHT_BRACE        &kp DOLLAR        &kp EXCLAMATION    &trans       &trans    &trans  &trans  &trans  &trans
+                                                &trans                 &trans            &kp BACKSPACE      &trans       &trans    &trans
             >;
         };
 
@@ -172,15 +181,6 @@
 &trans  &kp F11  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &trans   &trans
 &trans  &kp F12  &trans          &trans        &trans          &trans             &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans   &trans
                                  &trans        &trans          &trans             &trans        &trans        &trans
-            >;
-        };
-
-        symbols {
-            bindings = <
-&kp GRAVE  &kp PIPE              &kp LESS_THAN  &kp EQUAL              &kp GREATER_THAN  &kp AMPS           &kp AT_SIGN  &kp HASH  &trans  &trans  &trans  &trans
-&kp LBKT   &kp LEFT_PARENTHESIS  &kp COLON      &kp RIGHT_PARENTHESIS  &kp RBKT          &kp PERCENT        &trans       &trans    &trans  &trans  &trans  &trans
-&kp TILDE  &kp LEFT_BRACE        &kp ASTERISK   &kp RIGHT_BRACE        &kp DOLLAR        &kp EXCLAMATION    &trans       &trans    &trans  &trans  &trans  &trans
-                                                &trans                 &trans            &trans             &trans       &trans    &trans
             >;
         };
 
