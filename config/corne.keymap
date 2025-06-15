@@ -16,6 +16,7 @@
         utils_layer {
             bindings = <&mo 4>;
             key-positions = <24 35>;
+            layers = <0>;
         };
 
         left_parens {
