@@ -98,6 +98,16 @@
             bindings = <&kp UNDER>;
             key-positions = <16 28>;
         };
+
+        div {
+            bindings = <&kp SLASH>;
+            key-positions = <6 7>;
+        };
+
+        mult {
+            bindings = <&kp KP_MULTIPLY>;
+            key-positions = <4 5>;
+        };
     };
 
     macros {
