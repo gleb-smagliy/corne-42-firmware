@@ -108,6 +108,16 @@
             bindings = <&kp KP_MULTIPLY>;
             key-positions = <4 5>;
         };
+
+        hash {
+            bindings = <&kp HASH>;
+            key-positions = <7 8>;
+        };
+
+        at_sign {
+            bindings = <&kp AT>;
+            key-positions = <4 3>;
+        };
     };
 
     macros {
