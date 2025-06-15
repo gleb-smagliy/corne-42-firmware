@@ -161,10 +161,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LALT GRAVE      &kp Q         &kp W            &kp E             &kp R                 &kp T       &kp Y                 &kp U                  &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
+&kp GRAVE           &kp Q         &kp W            &kp E             &kp R                 &kp T       &kp Y                 &kp U                  &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
 &hrm GLOBE PERCENT  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D  &hrm LSHFT F          &kp G       &kp H                 &hrm RSHFT J           &hrm RMETA K  &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
 &kp CARET           &kp Z         &kp X            &kp C             &upper_v              &kp B       &kp N                 &kp M                  &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
-                                                   &kp LS(TAB)       &short_layer 1 SPACE  &kp BSPC    &short_layer 2 ENTER  &short_layer 1 ESCAPE  &kp TAB
+                                                   &kp LS(TAB)       &short_layer 3 SPACE  &kp BSPC    &short_layer 2 ENTER  &short_layer 1 ESCAPE  &kp TAB
             >;
         };
 
@@ -177,10 +177,10 @@
 
             display-name = "Nums";
             bindings = <
-&trans  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0           &kp W   &kp E   &trans  &trans  &trans  &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5           &kp H   &kp J   &kp K   &kp L   &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans           &kp B   &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &kp BACKSPACE    &trans  &trans  &trans
+&trans  &trans  &kp N7  &kp N8  &kp N9  &trans    &kp W   &kp E   &trans  &trans  &trans  &trans
+&trans  &trans  &kp N4  &kp N5  &kp N6  &trans    &kp H   &kp J   &kp K   &kp L   &trans  &trans
+&trans  &trans  &kp N1  &kp N2  &kp N3  &trans    &kp B   &trans  &trans  &trans  &trans  &trans
+                        &kp N0  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
