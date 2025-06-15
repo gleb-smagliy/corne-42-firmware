@@ -55,7 +55,7 @@
 
         amps {
             bindings = <&kp AMPERSAND>;
-            key-positions = <8 9>;
+            key-positions = <30 31>;
         };
 
         gt {
@@ -68,7 +68,7 @@
             key-positions = <34 33>;
         };
 
-        bspc {
+        colon {
             bindings = <&kp COLON>;
             key-positions = <7 19>;
         };
@@ -76,6 +76,11 @@
         lt {
             bindings = <&kp LESS_THAN>;
             key-positions = <28 16>;
+        };
+
+        pipe {
+            bindings = <&none>;
+            key-positions = <28 29>;
         };
     };
 
