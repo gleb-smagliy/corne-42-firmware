@@ -69,7 +69,7 @@
         };
 
         bspc {
-            bindings = <&kp BSPC>;
+            bindings = <&kp COLON>;
             key-positions = <7 19>;
         };
 
@@ -136,10 +136,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LALT GRAVE    &kp Q         &kp W            &kp E                &kp R                 &kp T                &kp Y                 &kp U                 &kp I             &kp O        &kp P            &paste_vim
-&hrm GLOBE TAB    &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D     &hrm LSHFT F          &kp G                &kp H                 &hrm RSHFT J          &hrm RMETA K      &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
-&mt RSHIFT TILDE  &kp Z         &kp X            &kp C                &upper_v              &kp B                &kp N                 &kp M                 &kp COMMA         &kp DOT      &kp FSLH         &mt RSHFT PIPE
-                                                 &mt LEFT_META CARET  &short_layer 2 SPACE  &hrm LCTRL ESCAPE    &short_layer 3 ENTER  &short_layer 1 COLON  &mt RMETA DOLLAR
+&mt LALT GRAVE    &kp Q         &kp W            &kp E                &kp R                 &kp T                &kp Y                 &kp U                &kp I             &kp O        &kp P            &paste_vim
+&hrm GLOBE TAB    &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D     &hrm LSHFT F          &kp G                &kp H                 &hrm RSHFT J         &hrm RMETA K      &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
+&mt RSHIFT TILDE  &kp Z         &kp X            &kp C                &upper_v              &kp B                &kp N                 &kp M                &kp COMMA         &kp DOT      &kp FSLH         &mt RSHFT PIPE
+                                                 &mt LEFT_META CARET  &short_layer 2 SPACE  &hrm LCTRL ESCAPE    &short_layer 3 ENTER  &short_layer 1 BSPC  &mt RMETA DOLLAR
             >;
         };
 
