@@ -83,6 +83,16 @@
             bindings = <&kp PIPE>;
             key-positions = <28 29>;
         };
+
+        eq {
+            bindings = <&kp EQUAL>;
+            key-positions = <8 20>;
+        };
+
+        excl {
+            bindings = <&kp EXCL>;
+            key-positions = <3 15>;
+        };
     };
 
     macros {
