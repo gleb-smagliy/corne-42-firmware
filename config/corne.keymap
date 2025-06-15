@@ -126,7 +126,16 @@
             #binding-cells = <0>;
             bindings = <&kp V>, <&kp RS(V)>;
 
-            tapping-term-ms = <200>;
+            tapping-term-ms = <150>;
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-tap-dance";
+            label = "PASTE";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&paste_vim>;
+
+            tapping-term-ms = <150>;
         };
     };
 
@@ -142,10 +151,10 @@
 
             display-name = "Base";
             bindings = <
-&mt LALT GRAVE  &kp Q         &kp W            &kp E             &kp R                 &kp T       &kp Y                 &kp U                  &kp I         &kp O        &kp P            &paste_vim
-&hrm GLOBE TAB  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D  &hrm LSHFT F          &kp G       &kp H                 &hrm RSHFT J           &hrm RMETA K  &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
-&kp CARET       &kp Z         &kp X            &kp C             &upper_v              &kp B       &kp N                 &kp M                  &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
-                                               &kp LS(TAB)       &short_layer 1 SPACE  &kp BSPC    &short_layer 2 ENTER  &short_layer 1 ESCAPE  &kp TAB
+&mt LALT GRAVE            &kp Q         &kp W            &kp E             &kp R                 &kp T       &kp Y                 &kp U                  &kp I         &kp O        &paste           &paste_vim
+&hrm GLOBE DOUBLE_QUOTES  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D  &hrm LSHFT F          &kp G       &kp H                 &hrm RSHFT J           &hrm RMETA K  &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
+&kp CARET                 &kp Z         &kp X            &kp C             &upper_v              &kp B       &kp N                 &kp M                  &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
+                                                         &kp LS(TAB)       &short_layer 1 SPACE  &kp BSPC    &short_layer 2 ENTER  &short_layer 1 ESCAPE  &kp TAB
             >;
         };
 
