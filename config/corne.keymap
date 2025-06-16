@@ -177,6 +177,19 @@
 
             tapping-term-ms = <150>;
         };
+
+        hrl: hrl {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HRL";
+            bindings = <&mo>, <&kp>;
+
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <250>;
+            quick-tap-ms = <170>;
+            require-prior-idle-ms = <150>;
+            hold-trigger-on-release;
+        };
     };
 
     keymap {
@@ -191,10 +204,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE           &kp Q         &kp W            &kp E             &kp R                 &kp T       &kp Y                 &kp U                  &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
-&hrm GLOBE PERCENT  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D  &hrm LSHFT F          &kp G       &kp H                 &hrm RSHFT J           &hrm RMETA K  &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
-&kp CARET           &kp Z         &kp X            &kp C             &upper_v              &kp B       &kp N                 &kp M                  &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
-                                                   &kp LS(TAB)       &short_layer 3 SPACE  &kp BSPC    &short_layer 2 ENTER  &short_layer 1 ESCAPE  &kp TAB
+&kp GRAVE           &kp Q         &kp W            &kp E             &kp R          &kp T           &kp Y         &kp U             &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
+&hrm GLOBE PERCENT  &hrm LCTRL A  &hrm LEFT_ALT S  &hrm LEFT_META D  &hrm LSHFT F   &kp G           &kp H         &hrm RSHFT J      &hrm RMETA K  &hrm RALT L  &hrm RCTRL SEMI  &hrm GLOBE SQT
+&kp CARET           &kp Z         &kp X            &kp C             &upper_v       &kp B           &kp N         &kp M             &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
+                                                   &kp LS(TAB)       &hrl 3 ESCAPE  &hrl 2 SPACE    &hrl 2 ENTER  &hrl 1 BACKSPACE  &kp TAB
             >;
         };
 
