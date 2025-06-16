@@ -7,7 +7,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/pointing.h>
 
 / {
     combos {
@@ -99,10 +98,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE           &kp Q         &kp W            &kp E         &kp R          &kp T           &kp Y         &kp U         &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
-&hrm GLOBE PERCENT  &hrm LMETA A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LSHFT F   &kp G           &kp H         &hrm RSHFT J  &hrm RCTRL K  &hrm RALT L  &hrm RMETA SEMI  &hrm GLOBE SQT
-&kp CARET           &kp Z         &kp X            &kp C         &upper_v       &kp B           &kp N         &kp M         &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
-                                                   &kp TAB       &hrl 3 ESCAPE  &hrl 2 SPACE    &hrl 1 ENTER  &kp BSPC      &kp LS(TAB)
+&kp GRAVE           &kp Q         &kp W            &kp E         &kp R          &kp T           &kp Y      &kp U             &kp I         &kp O        &paste           &kp DOUBLE_QUOTES
+&hrm GLOBE PERCENT  &hrm LMETA A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LSHFT F   &kp G           &kp H      &hrm RSHFT J      &hrm RCTRL K  &hrm RALT L  &hrm RMETA SEMI  &hrm GLOBE SQT
+&kp CARET           &kp Z         &kp X            &kp C         &upper_v       &kp B           &kp N      &kp M             &kp COMMA     &kp DOT      &kp FSLH         &kp DOLLAR
+                                                   &kp TAB       &hrl 3 ESCAPE  &hrl 2 SPACE    &kp ENTER  &hrl 1 BACKSPACE  &kp LS(TAB)
             >;
         };
 
@@ -140,10 +139,10 @@
 
             display-name = "Nav";
             bindings = <
-&trans  &kp F1   &kp F2          &kp F3        &kp F4          &kp F5             &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &trans
-&trans  &kp F11  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT    &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &trans   &trans
-&trans  &kp F12  &trans          &trans        &trans          &trans             &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans   &trans
-                                 &trans        &trans          &trans             &trans        &trans        &trans
+&trans  &kp F1    &kp F2    &kp F3     &kp F4     &kp F5    &kp F6        &kp F7        &kp F8         &kp F9         &kp F10  &trans
+&trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &trans    &kp LEFT      &kp DOWN      &kp UP_ARROW   &kp RIGHT      &trans   &trans
+&trans  &kp F11   &kp F12   &trans     &trans     &trans    &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans   &trans
+                            &trans     &trans     &trans    &trans        &trans        &trans
             >;
         };
 
