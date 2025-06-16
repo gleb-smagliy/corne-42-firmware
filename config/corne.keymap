@@ -123,10 +123,10 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp PERCENT      &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS         &kp MINUS  &kp HASH      &kp DOUBLE_QUOTES
-&trans  &trans  &trans  &trans  &trans  &kp CARET        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp UNDER  &kp COLON     &kp SINGLE_QUOTE
-&trans  &trans  &trans  &trans  &trans  &kp BACKSLASH    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_MULTIPLY  &kp PIPE   &kp QUESTION  &kp DOLLAR
-                        &trans  &trans  &trans           &kp SPACE             &trans                 &kp TILDE
+&trans  &trans  &trans  &kp GRAVE  &kp CARET  &kp DOLLAR       &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS         &kp MINUS  &kp HASH      &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &kp AT     &kp EXCL   &kp BACKSLASH    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp UNDER  &kp COLON     &kp SINGLE_QUOTE
+&trans  &trans  &trans  &trans     &trans     &kp PERCENT      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_MULTIPLY  &kp PIPE   &kp QUESTION  &kp DOLLAR
+                        &trans     &trans     &trans           &kp SPACE             &trans                 &kp TILDE
             >;
         };
 
