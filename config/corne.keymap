@@ -21,107 +21,107 @@
 
         left_parens {
             bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
+            key-positions = <>;
         };
 
         right_parens {
             bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <18 19>;
+            key-positions = <>;
         };
 
         bracket_left {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <5 17>;
+            key-positions = <>;
         };
 
         bracket_right {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <6 18>;
+            key-positions = <>;
         };
 
         curly_left {
             bindings = <&kp LEFT_BRACE>;
-            key-positions = <17 29>;
+            key-positions = <>;
         };
 
         curly_right {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <18 30>;
+            key-positions = <>;
         };
 
         minus {
             bindings = <&kp MINUS>;
-            key-positions = <4 16>;
+            key-positions = <>;
         };
 
         amps {
             bindings = <&kp AMPERSAND>;
-            key-positions = <30 31>;
+            key-positions = <>;
         };
 
         gt {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <20 32>;
+            key-positions = <>;
         };
 
         backslash {
             bindings = <&kp BACKSLASH>;
-            key-positions = <6 7>;
+            key-positions = <>;
         };
 
         colon {
             bindings = <&kp COLON>;
-            key-positions = <8 20>;
+            key-positions = <>;
         };
 
         lt {
             bindings = <&kp LESS_THAN>;
-            key-positions = <15 27>;
+            key-positions = <>;
         };
 
         pipe {
             bindings = <&kp PIPE>;
-            key-positions = <28 29>;
+            key-positions = <>;
         };
 
         eq {
             bindings = <&kp EQUAL>;
-            key-positions = <7 19>;
+            key-positions = <>;
         };
 
         excl {
             bindings = <&kp EXCL>;
-            key-positions = <3 15>;
+            key-positions = <>;
         };
 
         under {
             bindings = <&kp UNDER>;
-            key-positions = <16 28>;
+            key-positions = <>;
         };
 
         div {
             bindings = <&kp SLASH>;
-            key-positions = <19 6 18 7>;
+            key-positions = <>;
         };
 
         mult {
             bindings = <&kp KP_MULTIPLY>;
-            key-positions = <4 5>;
+            key-positions = <>;
         };
 
         hash {
             bindings = <&kp HASH>;
-            key-positions = <7 8>;
+            key-positions = <>;
         };
 
         at_sign {
             bindings = <&kp AT>;
-            key-positions = <4 3>;
+            key-positions = <>;
         };
 
         plus {
             bindings = <&kp PLUS>;
-            key-positions = <19 31>;
+            key-positions = <>;
         };
     };
 
