@@ -163,14 +163,5 @@
                         &trans  &trans  &trans    &trans        &trans        &trans
             >;
         };
-
-        not_used {
-            bindings = <
-&trans     &kp PIPE   &kp AMPS    &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL  &trans  &trans  &trans
-&trans     &kp COLON  &kp DOLLAR  &kp PERCENT      &kp MINUS             &kp PLUS                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans  &trans  &trans
-&kp CARET  &kp TILDE  &kp EXCL    &kp AT_SIGN      &kp HASH              &kp BACKSLASH            &trans            &trans             &trans     &trans  &trans  &kp DOLLAR
-                                  &kp UNDER        &trans                &trans                   &kp SPACE         &trans             &trans
-            >;
-        };
     };
 };
