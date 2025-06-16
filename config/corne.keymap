@@ -27,6 +27,14 @@
             bindings = <&kp DQT &kp N0 &kp P>;
             label = "PASTE_VIM";
         };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>, <&macro_press>, <&kp>;
+
+            label = "TEST";
+        };
     };
 
     behaviors {
@@ -127,7 +135,7 @@
 &trans     &kp PIPE   &kp AMPS    &kp KP_MULTIPLY  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS    &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp EQUAL  &trans  &trans  &trans
 &trans     &kp COLON  &kp DOLLAR  &kp PERCENT      &kp MINUS             &kp PLUS                 &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans     &trans  &trans  &trans
 &kp CARET  &kp TILDE  &kp EXCL    &kp AT_SIGN      &kp HASH              &kp BACKSLASH            &trans            &trans             &trans     &trans  &trans  &kp DOLLAR
-                                  &kp UNDER        &trans                &trans                   &trans            &trans             &trans
+                                  &kp UNDER        &trans                &trans                   &kp SPACE         &trans             &trans
             >;
         };
 
@@ -153,6 +161,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans        &trans        &trans        &trans        &trans
                         &trans  &trans  &trans    &trans        &trans        &trans
+            >;
+        };
+
+        layer_5 {
+            bindings = <
+&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp PLUS         &kp PERCENT  &kp HASH       &kp DOUBLE_QUOTES
+&trans     &trans  &trans  &trans  &trans  &trans    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL        &kp UNDER    &kp COLON      &kp SINGLE_QUOTE
+&kp CARET  &trans  &trans  &trans  &trans  &trans    &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_MULTIPLY  &kp PIPE     &kp BACKSLASH  &kp DOLLAR
+                           &trans  &trans  &trans    &kp SPACE             &trans                 &kp TILDE
             >;
         };
     };
