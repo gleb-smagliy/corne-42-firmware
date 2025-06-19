@@ -23,6 +23,11 @@
             key-positions = <16 19>;
             layers = <0>;
         };
+
+        cap_v {
+            bindings = <&kp LS(V)>;
+            key-positions = <28 16>;
+        };
     };
 
     macros {
@@ -90,6 +95,20 @@
             require-prior-idle-ms = <150>;
             hold-trigger-on-release;
         };
+
+        td_f: td_f {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_F";
+            #binding-cells = <0>;
+            bindings = <&hrm LEFT_SHIFT F>, <&caps_word>;
+        };
+
+        td_s: td_s {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_S";
+            #binding-cells = <0>;
+            bindings = <&hrm LEFT_SHIFT S>, <&kp LG(S)>;
+        };
     };
 
     keymap {
@@ -106,7 +125,7 @@
             bindings = <
 &kp PERCENT       &kp Q         &kp W            &kp E         &kp R          &kp T           &kp Y         &kp U          &kp I           &kp O        &paste           &kp EQUAL
 &hrm GLOBE GRAVE  &hrm LMETA A  &hrm LEFT_ALT S  &hrm LCTRL D  &hrm LSHFT F   &kp G           &kp H         &hrm RSHFT J   &hrm RCTRL K    &hrm RALT L  &hrm RMETA SEMI  &hrm GLOBE SQT
-&kp BACKSLASH     &kp Z         &kp X            &kp C         &upper_v       &kp B           &kp N         &kp M          &kp COMMA       &kp DOT      &hrl 1 SLASH     &kp MINUS
+&kp BACKSLASH     &kp Z         &kp X            &kp C         &kp V          &kp B           &kp N         &kp M          &kp COMMA       &kp DOT      &hrl 1 SLASH     &kp MINUS
                                                  &kp TAB       &hrl 2 ESCAPE  &hrl 3 SPACE    &hrl 1 ENTER  &kp BACKSPACE  &kp UNDERSCORE
             >;
         };
@@ -129,10 +148,10 @@
 
         symbols {
             bindings = <
-&trans  &trans  &trans  &trans  &kp AT  &kp CARET        &kp DOLLAR        &kp LEFT_BRACE        &kp KP_MULTIPLY  &kp RIGHT_BRACE        &kp PIPE           &kp HASH
-&trans  &trans  &trans  &trans  &trans  &kp BACKSLASH    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp COLON        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp PLUS
-&trans  &trans  &trans  &trans  &trans  &kp PERCENT      &kp AMPERSAND     &kp LESS_THAN         &kp EQUAL        &kp GREATER_THAN       &kp QUESTION       &kp EXCLAMATION
-                        &trans  &trans  &trans           &kp SPACE         &trans                &kp TILDE
+&trans  &trans  &trans  &trans  &kp AT                &kp CARET        &kp DOLLAR        &kp LEFT_BRACE        &kp KP_MULTIPLY  &kp RIGHT_BRACE        &kp PIPE           &kp HASH
+&trans  &trans  &trans  &trans  &hrm LEFT_SHIFT PLUS  &kp BACKSLASH    &kp LEFT_BRACKET  &kp LEFT_PARENTHESIS  &kp COLON        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp DOUBLE_QUOTES
+&trans  &trans  &trans  &trans  &trans                &kp PERCENT      &kp AMPERSAND     &kp LESS_THAN         &kp EQUAL        &kp GREATER_THAN       &kp QUESTION       &kp EXCLAMATION
+                        &trans  &trans                &trans           &kp SPACE         &trans                &kp TILDE
             >;
         };
 
