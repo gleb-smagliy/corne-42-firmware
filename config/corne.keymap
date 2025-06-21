@@ -101,20 +101,6 @@
             hold-trigger-on-release;
         };
 
-        td_f: td_f {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_F";
-            #binding-cells = <0>;
-            bindings = <&hrm LEFT_SHIFT F>, <&caps_word>;
-        };
-
-        td_s: td_s {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TD_S";
-            #binding-cells = <0>;
-            bindings = <&hrm LEFT_SHIFT S>, <&kp LG(S)>;
-        };
-
         tdj: tdj {
             compatible = "zmk,behavior-tap-dance";
             label = "J";
@@ -133,6 +119,42 @@
             tapping-term-ms = <50>;
             flavor = "balanced";
         };
+
+        tdh: tdh {
+            compatible = "zmk,behavior-tap-dance";
+            label = "H";
+            #binding-cells = <0>;
+            bindings = <&hrm RSHFT H>, <&hr 0 0>;
+
+            tapping-term-ms = <100>;
+        };
+
+        tdk: tdk {
+            compatible = "zmk,behavior-tap-dance";
+            label = "K";
+            #binding-cells = <0>;
+            bindings = <&hrm RCTRL K>, <&hr 0 0>;
+
+            tapping-term-ms = <100>;
+        };
+
+        tdl: tdl {
+            compatible = "zmk,behavior-tap-dance";
+            label = "L";
+            #binding-cells = <0>;
+            bindings = <&hrm RSHFT L>, <&hr 0 0>;
+
+            tapping-term-ms = <100>;
+        };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-tap-dance";
+            label = "NEW_BEHAVIOR";
+            #binding-cells = <0>;
+            bindings = <&hrm RALT K>, <&hr 0 0>;
+
+            tapping-term-ms = <100>;
+        };
     };
 
     keymap {
@@ -147,10 +169,10 @@
 
             display-name = "Base";
             bindings = <
-&kp GRAVE       &kp Q  &kp W            &kp E               &kp R          &kp T           &kp Y         &kp U          &kp I             &kp O        &paste           &kp EQUAL
-&hrm GLOBE TAB  &kp A  &hrm LEFT_ALT S  &hrm LCTRL D        &hrm LSHFT F   &kp G           &kp H         &tdj           &hrm RCTRL K      &hrm RALT L  &hrm RMETA SEMI  &hrm GLOBE SQT
-&kp BACKSLASH   &kp Z  &kp X            &kp C               &kp V          &kp B           &kp N         &kp M          &kp COMMA         &kp DOT      &hrl 1 SLASH     &kp MINUS
-                                        &hrm LMETA PERCENT  &hrl 2 ESCAPE  &hrl 3 SPACE    &hrl 1 ENTER  &kp BACKSPACE  &hrm RMETA UNDER
+&kp GRAVE       &kp Q         &kp W            &kp E               &kp R          &kp T           &kp Y         &kp U          &kp I             &kp O    &paste           &kp EQUAL
+&hrm GLOBE TAB  &hrm LMETA A  &hrm LEFT_ALT S  &hrm LCTRL D        &hrm LSHFT F   &kp G           &tdh          &tdj           &tdk              &tdl     &hrm RMETA SEMI  &hrm GLOBE SQT
+&kp BACKSLASH   &kp Z         &kp X            &kp C               &kp V          &kp B           &kp N         &kp M          &kp COMMA         &kp DOT  &hrl 1 SLASH     &kp MINUS
+                                               &hrm LMETA PERCENT  &hrl 2 ESCAPE  &hrl 3 SPACE    &hrl 1 ENTER  &kp BACKSPACE  &hrm RMETA UNDER
             >;
         };
 
