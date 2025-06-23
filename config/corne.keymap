@@ -33,6 +33,11 @@
             bindings = <&none>;
             key-positions = <4 16>;
         };
+
+        ctrl-s {
+            bindings = <&kp LC(S)>;
+            key-positions = <14 15>;
+        };
     };
 
     macros {
